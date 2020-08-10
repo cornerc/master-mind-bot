@@ -24,11 +24,11 @@ while (true) {
 
 ## Usage
 
-### `Bot(value, digit, level, duplicate)`
+### `MsterMindBot(value, digit, level, duplicate)`
 
 Lightweight master mind solver. It can be used as a CPU.
 
-#### args
+### args
 
 __value__ `(number | string)` `required`
 
@@ -53,7 +53,7 @@ __duplicate__ `number` `false`
 
 Allow duplicate numbers. Default is false.
 
-#### method
+### method
 
 __execute() => Hint__
 
@@ -89,7 +89,8 @@ Debugging information is output to the console.
 ### `Field(value, digit)`
 
 Support class of Bot class. This is also useful for the implementation of Master Mind Application.
-#### args
+
+### args
 
 __value__ `(number | string)` `required`
 
@@ -99,7 +100,7 @@ __digit__ `number` `required`
 
 Number of digits in sequence. If the __value__ is less than this value, it is zero-padded
 
-#### method
+### method
 
 __get() => string[]__
 
