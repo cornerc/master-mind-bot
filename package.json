@@ -1,9 +1,8 @@
 {
   "name": "master-mind-bot",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "dist/index.js",
-  "type": "module",
   "scripts": {
     "build": "./node_modules/.bin/tsc",
     "ts-node": "./node_modules/.bin/ts-node src/index.ts",
