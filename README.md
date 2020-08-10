@@ -22,3 +22,9 @@ while (true) {
   if (res.field.get() === (1234).toString().split('')) break;
 }
 ```
+
+## Develop
+
+```
+npm install
+```
