@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Field = void 0;
 const masterMind_1 = require("./masterMind");
+Object.defineProperty(exports, "Field", { enumerable: true, get: function () { return masterMind_1.Field; } });
 class MsterMindBot {
     constructor(value, digit = 4, level = 1, duplicate = false) {
         this.digit = digit;

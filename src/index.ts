@@ -5,6 +5,8 @@ type Hint = {
   answer: Answer;
 }
 
+export { Field };
+
 export default class MsterMindBot {
   private correct: Field;
   private candidate: Candidate;

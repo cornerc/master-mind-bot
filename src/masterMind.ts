@@ -33,24 +33,6 @@ export class Field {
     return this.value.length !== Array.from(new Set(this.value)).length
   }
 
-  isContain(field: Field, num: number) {
-    let tmpValue = field.get();
-    let count = 0;
-    for (let fv of this.value) {
-      let idx = tmpValue.findIndex(v => fv == v);
-      if (idx != -1) {
-        count++;
-        tmpValue.splice(idx, 1);
-      }
-    }
-    return num <= count;
-  }
-
-  isSamePosition(field: Field, num: number) {
-    let count = field.get().filter((v, i) => v == this.value[i]).length;
-    return num <= count;
-  }
-
   info() {
     console.log(`config:${this.value}`);
   }
