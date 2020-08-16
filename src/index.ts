@@ -16,9 +16,14 @@ export default class MsterMindBot {
   }
 
   execute(): Hint {
-    const field = this.candidate.getRandomField();
-    const answer = this.correct.answer(field);
+    let field = this.candidate.getRandomField();
+    let answer = this.correct.answer(field);
     this.candidate.calculate({ field, answer });
+    if (this.level == 2) {
+      field = this.candidate.getRandomField();
+      answer = this.correct.answer(field);
+      this.candidate.calculate({ field, answer });
+    }
     return { field, answer };
   }
 
